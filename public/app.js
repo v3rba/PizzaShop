@@ -5,7 +5,7 @@ function something()
 
   x = x * 1 + 1;
 
-  window.localStorage.setItem('aaa', 555);
+  window.localStorage.setItem('aaa', x);
 
   alert(x);
 
