@@ -1,4 +1,2 @@
-sinatra-bootstrap-clean
+<h2>PizzaShop app</h2>
 =======================
-
-Cleaned version of https://github.com/bootstrap-ruby/sinatra-bootstrap
