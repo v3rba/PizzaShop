@@ -1,9 +1,12 @@
 <h2>Wellcome to PizzaShop</h2>
 
-<% @products.each do |p| %>
-<p>
-  product
-</p>
+<div class="row">
+
+
+    <% @products.each do |p| %>
+    <div class="col-md-3">
+      <%= p.title %>
+    </div>
 
 <% end %>
 
