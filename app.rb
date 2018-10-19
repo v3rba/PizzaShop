@@ -21,6 +21,11 @@ get '/about' do
   erb :about
 end
 
+post '/place_order' do
+  @order = Order.create params[:order]
+  erb :order_placed
+end
+
 post '/cart' do
   @orders_input = params[:orders]
   @items = parse_orders_input @orders_input
@@ -33,7 +38,7 @@ post '/cart' do
   erb :cart
 end
 
-def parse_orders_input(orders_input)
+def parse_orders_input orders_input
 
     s1 = orders_input.split(/,/)
 
